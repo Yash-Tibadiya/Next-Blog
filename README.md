@@ -50,52 +50,57 @@ The project structure is as follows:
 
 ```
 next_blog/
-  |- public/
-    |-- github.svg
-    |-- icon.svg
-  |- src/
-    |-- app/
-        |--- (auth)/
-        |--- (dashboard)/
-        |--- (standalone)/
-        |--- api/[[...route]]/
-        |--- apple-icon.png
-        |--- error.tsx
-        |--- favicon.ico
-        |--- globals.css
-        |--- icon1.png
-        |--- icon2.png
-        |--- layout.tsx
-        |--- not-found.tsx
-    |-- components/
-        |--- general/
-            |---- AuthProvider.tsx
-            |---- BlogpostCard.tsx
-            |---- Navbar.tsx
-            |---- Submitbutton.tsx
-        |--- ui/
-            |---- button.tsx
-            |---- card.tsx
-            |---- input.tsx
-            |---- label.tsx
-            |---- skeleton.tsx
-            |---- textarea.tsx
-    |-- lib/
-        |--- utils.ts
-    |-- prisma/
-        |--- schema.prisma
-  |- .env
-  |- .gitignore
-  |- bun.lock
-  |- components.json
-  |- eslint.config.mjs
-  |- middleware.ts
-  |- next-env.d.ts
-  |- next.config.ts
-  |- package.json
-  |- postcss.config.mjs
-  |- README.md
-  |- tsconfig.json
+├── app/
+│   ├── actions.ts
+│   ├── api/
+│   │   └── auth/
+│   │       └── [kindeAuth]/
+│   │           └── route.ts
+│   ├── dashboard/
+│   │   ├── create/
+│   │   │   └── page.tsx
+│   │   ├── loading.tsx
+│   │   └── page.tsx
+│   ├── favicon.ico
+│   ├── globals.css
+│   ├── layout.tsx
+│   ├── page.tsx
+│   ├── post/
+│   │   └── [id]/
+│   │       └── page.tsx
+│   └── utils/
+│       └── db.ts
+├── components/
+│   ├── general/
+│   │   ├── AuthProvider.tsx
+│   │   ├── BlogpostCard.tsx
+│   │   ├── Navbar.tsx
+│   │   └── Submitbutton.tsx
+│   └── ui/
+│       ├── button.tsx
+│       ├── card.tsx
+│       ├── input.tsx
+│       ├── label.tsx
+│       ├── skeleton.tsx
+│       └── textarea.tsx
+├── lib/
+│   └── utils.ts
+├── prisma/
+│   └── schema.prisma
+├── public/
+├── .env
+├── .gitignore
+├── bun.lock
+├── components.json
+├── eslint.config.mjs
+├── LICENSE
+├── middleware.ts
+├── next-env.d.ts
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── README.md
+└── tsconfig.json
 ```
 
 ## Technologies Used
