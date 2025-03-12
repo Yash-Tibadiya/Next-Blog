@@ -57,10 +57,11 @@ function LoadingBlogPosts() {
           className="group relative overflow-hidden rounded-lg border border-gray-200 bg-white shadow-md transition-all hover:shadow-lg"
         >
           <div className="relative h-48 w-full overflow-hidden">
-            <Skeleton className="h-full w-full" />
+            <Skeleton className="h-full w-full rounded-none" />
           </div>
           <div className="p-4">
             <Skeleton className="h-6 w-3/4 mb-2" />
+            <Skeleton className="h-4 w-full mb-4" />
             <Skeleton className="h-4 w-full mb-4" />
             <div className="flex items-center justify-between">
               <div className="flex items-center space-x-2">
