@@ -8,6 +8,7 @@ const nextConfig: NextConfig = {
       "images.pexels.com",
       "lh3.googleusercontent.com",
     ],
+    unoptimized: true,
   },
 };
 
