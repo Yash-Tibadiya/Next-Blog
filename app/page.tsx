@@ -3,6 +3,8 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { prisma } from "./utils/db";
 import { Suspense } from "react";
 
+export const revalidate = 60;
+
 async function getData() {
   await new Promise((resolve) => setTimeout(resolve, 2000));
   const data = await prisma.blogPost.findMany({
