@@ -27,10 +27,7 @@ export default async function IdPage({ params }: { params: Params }) {
 
   return (
     <div className="max-w-3xl mx-auto py-8 px-4">
-      <Link
-        className={buttonVariants({ variant: "secondary" })}
-        href="/"
-      >
+      <Link className={buttonVariants({ variant: "secondary" })} href="/">
         Back to Home
       </Link>
 
@@ -69,7 +66,9 @@ export default async function IdPage({ params }: { params: Params }) {
 
       <Card>
         <CardContent>
-          <p className="text-gray-700">{data.content}</p>
+          <p className="text-gray-700" style={{ whiteSpace: "pre-line" }}>
+            {data.content}
+          </p>
         </CardContent>
       </Card>
     </div>
